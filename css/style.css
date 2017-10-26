@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Responsive design, mobile-first */
+body {
+  background-color: #4D194D; /*#3D2B3D*/
+  font-family: 'Orbitron', sans-serif;
+  font-size: 75%;
+  color: #4D194D; /*#3D2B3D*/
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #EDEBED;
+  padding: 50px 0 50px 0;
+}
+
+form {
+  margin-bottom: 25px;
+  background-color: #EDEBED;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.streamer-display {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.online {
+  background-color: #BDF7BA; /*#BDE8BB*/
+}
+
+.offline {
+  background-color: #999999; /*#C4A39D*/
+}
+
+.not-found {
+  background-color: #EDEBED;
+}
+
+.online img, .online a, .online p  {
+  align-self: center;
+}
+
+.online p {
+  margin-left: 15px;
+}
+
+.offline a {
+  margin: 10px 0 5px 5px;
+}
+
+.offline p {
+  margin: -20px 0 5px 54px;
+}
+
+img {
+  padding: 2px;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: bold;
+  color: #4D194D; /*#3D2B3D*/
+}
+
+footer {
+  text-align: center;
+  color: #EDEBED;
+  margin: 75px 0 5px 0;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+  body {
+    font-size: 100%;
+  }
+  .online p {
+    margin-left: 54px;
+  }
+  .offline img {
+    margin-top: 5px;
+  }
+  footer {
+    margin-top: 150px;
+  }
+}
+
+/* Small Desktop Styles */
+@media only screen and (min-width: 1001px) and (max-width: 1500px) {
+  body {
+    font-size: 100%;
+  }
+  .outer-container {
+    width: 75%;
+  }
+  .online p {
+    margin-left: 54px;
+  }
+  .offline img {
+  margin-top: 5px;
+  }
+  footer {
+    font-size: 0.8em;
+    margin-top: 200px;
+  }
+}
+
+/* Large Desktop Styles */
+@media only screen and (min-width: 1501px) {
+  body {
+    font-size: 100%;
+  }
+  .outer-container {
+    width: 50%;
+  }
+  .online p {
+    margin-left: 54px;
+  }
+  .offline img {
+  margin-top: 5px;
+  }
+  footer {
+    font-size: 0.8em;
+    margin-top: 300px;
+  }
+}

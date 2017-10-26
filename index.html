@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch.tv API</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="outer-container">
+  <h1>Twitch streamers</h1>
+  <form>
+    <input id="all" type="radio" name="status" value="all" checked> All
+    <input id="online" type="radio" name="status" value="online"> Online
+    <input id="offline" type="radio" name="status" value="offline"> Offline
+  </form>
+  <div class="streamer-display"></div>
+</div>
+
+<footer>by Vocado78 - a FreeCodeCamp project</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
